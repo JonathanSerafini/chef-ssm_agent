@@ -12,8 +12,8 @@ default['ssm_agent'].tap do |config|
   # @since 0.1.0
   config['package']['url'] = format(
     'https://amazon-ssm-%s.s3.amazonaws.com/%s/%s/%s',
-    config['package']['version'],
     config['region'],
+    config['package']['version'],
     value_for_platform_family('rhel' => 'linux_amd64',
                               'debian' => 'debian_amd64'),
     value_for_platform_family('rhel' => 'amazon-ssm-agent.rpm',
