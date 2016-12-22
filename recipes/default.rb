@@ -1,20 +1,2 @@
-# Download the installer
-# @since 0.1.0
-remote_file 'amazon-ssm-agent' do
-  path node['ssm_agent']['package']['path']
-  source node['ssm_agent']['package']['url']
-  checksum node['ssm_agent']['package']['checksum']
-  mode 0644
-end
-
-# Install the pakage
-# @since 0.1.0
-package 'amazon-ssm-agent' do
-  source node['ssm_agent']['package']['path']
-end
-
-# Ensure service state
-# @since 0.1.0
-service node['ssm_agent']['service']['name'] do
-  action node['ssm_agent']['service']['actions']
-end
+include_recipe "#{cookbook_name}::install"
+include_recipe "#{cookbook_name}::logrotate"

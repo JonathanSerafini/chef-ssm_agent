@@ -7,3 +7,4 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 issues_url 'https://github.com/JonathanSerafini/chef-ssm_agent/issues'
 source_url 'https://github.com/JonathanSerafini/chef-ssm_agent'
 version '0.1.0'
+depends 'logrotate'

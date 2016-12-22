@@ -29,11 +29,15 @@ default['ssm_agent'].tap do |config|
   )
 
   # Checksum of the package
+  # * Note: This is currently disabled due to the URL be a /latest/
   # @since 0.1.0
-  config['package']['checksum'] = value_for_platform_family(
-    'rhel' => '',
-    'debian' => ''
-  )
+  config['package']['checksum'] = nil
+  # value_for_platform_family(
+  #  'rhel' => '15d8c8e6b2ecef39c37b2bed5ed68f68a9b511ba30d8d4d1f1ba3f49' \
+  #            'cfc70f0f',
+  #  'debian' => 'a48ff0126e113ef0d5a534c911b269d172e6ae08003a8bcda9723f' \
+  #              '5052f18e58'
+  # )
 
   # Name of the agent service
   # @since 0.1.0
