@@ -19,3 +19,5 @@ Include the default recipe.
 ```
 include_recipe 'ssm_agent::default'
 ```
+
+Additionally, the EC2 instance running the service will require specific IAM permissions which may be provided via [Managed Policies](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/systems-manager-access.html#sysman-configuring-access-policies). However, it's recommended to create a custom IAM policy due to how insecure the default managed policy seems to be.
