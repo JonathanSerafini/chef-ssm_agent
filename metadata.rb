@@ -1,15 +1,9 @@
 name 'ssm_agent'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'all_rights'
-description 'Installs/Configures ssm_agent'
-long_description 'Installs/Configures ssm_agent'
+maintainer 'Jonathan Serafini'
+maintainer_email 'jonathan@serafini.ca'
+license 'Apache 2.0'
+description 'Amazon EC2 Simple Systems Manager (SSM) agent'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+issues_url       'https://github.com/JonathanSerafini/chef-ssm_agent/issues'
+source_url       'https://github.com/JonathanSerafini/chef-ssm_agent'
 version '0.1.0'
-
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Issues` link
-# issues_url 'https://github.com/<insert_org_here>/ssm_agent/issues' if respond_to?(:issues_url)
-
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Source` link
-# source_url 'https://github.com/<insert_org_here>/ssm_agent' if respond_to?(:source_url)
