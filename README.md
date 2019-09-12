@@ -1,3 +1,7 @@
+# Abandoned Project
+
+**NOTE**: This project is no longer being maintained.
+
 ssm\_agent cookbook
 ===================
 
